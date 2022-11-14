@@ -71,3 +71,6 @@ notebook/.ipynb_checkpoints
 
 # Mac os x stuff
 .DS_Store
+
+#PyCharm
+.idea/
