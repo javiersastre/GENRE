@@ -102,6 +102,9 @@ setuptools.setup(
     install_requires=install_requires,
     # Optional requirements
     extras_require={
+        'fairseq': [
+            'fairseq==0.12.2'
+        ],
         'test': [
             'pytest>=7.2.0',
             'nose',
