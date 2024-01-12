@@ -1,3 +1,4 @@
+import os
 import pickle
 from unittest.mock import ANY
 
@@ -6,11 +7,14 @@ import pytest
 from genre.fairseq_model import GENRE, GENREHubInterface
 from genre.trie import Trie
 
+data_dir = os.path.join(os.path.dirname(__file__), 'data')
+
 
 @pytest.fixture(scope="session")
 def kilt_trie():
     # load the prefix tree (trie)
-    with open("./data/kilt_titles_trie_dict.pkl", "rb") as f:
+    with open(os.path.join(data_dir, 'kilt_titles_trie_dict.pkl'),
+              "rb") as f:
         trie = Trie.load_from_dict(pickle.load(f))
     return trie
 

@@ -1,6 +1,6 @@
-unidecode==1.3.6
-requests==2.28.1
-kilt @ git+https://github.com/javiersastre/KILT.git@installable
+unidecode==1.3.7
+requests==2.31.0
+kilt @ git+https://github.com/javiersastre/KILT.git@installable_2
 transformers==4.24.0
 bs4==0.0.1
-marisa_trie==0.7.8
+marisa_trie==1.1.0
